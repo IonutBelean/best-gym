@@ -38,7 +38,7 @@ body {
 
 .secondary-heading {
   font-size: 4.4rem;
-  padding: 6.4rem 0 9.6rem 0;
+  padding: 6.4rem 0;
   text-align: center;
 }
 
@@ -172,7 +172,7 @@ body {
 
 .text-images-container {
   display: flex;
-  margin-bottom: 6.4rem;
+  margin-bottom: 9.6rem;
 }
 
 .text-box {
@@ -193,8 +193,8 @@ body {
 .image-box::before {
   content: "";
   display: block;
-  width: 65%;
-  padding-bottom: 65%;
+  width: 55%;
+  padding-bottom: 55%;
 
   border-radius: 50%;
   background-color: rgb(235, 235, 235);
@@ -208,7 +208,7 @@ body {
 }
 
 .inner-image-box {
-  width: 50%;
+  width: 40%;
 }
 
 .number {
@@ -220,4 +220,109 @@ body {
 
 .number-description {
   font-size: 2rem;
+}
+
+/* ------------------- */
+/* Facts */
+/* ------------------- */
+
+.facts-section {
+  background-color: #e7eee6;
+  padding-bottom: 3.2rem;
+}
+
+.facts-description {
+  font-size: 2.4rem;
+  margin-bottom: 3.2rem;
+  text-align: center;
+}
+.facts-container {
+  display: flex;
+  gap: 1.6rem;
+}
+
+.facts-results {
+  display: flex;
+  gap: 1.6rem;
+  border: 5px solid gray;
+  border-radius: 2rem;
+  width: 25%;
+  padding: 1.6rem;
+}
+
+.facts-results-image {
+  width: 30%;
+}
+.facts-icon {
+  width: 100%;
+}
+
+.facts-results-description {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.facts-description-number {
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.facts-description-text {
+  font-size: 1.6rem;
+}
+
+/* ------------------- */
+/* Memberships */
+/* ------------------- */
+
+.memberships-section {
+  padding: 9.6rem 0;
+}
+
+.membership {
+  width: 33.33%;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.5);
+  border-radius: 1.6rem;
+}
+
+.membership-image {
+  height: 20rem;
+  margin: 0 auto;
+}
+
+.membership-content {
+  padding: 4.8rem;
+  padding-top: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.membership-title {
+  font-size: 2.4rem;
+  font-weight: 600;
+  margin-bottom: 2.4rem;
+}
+
+.membership-atributes {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.membership-atribute {
+  font-size: 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.membership-icon {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: #0f4d00;
 }
