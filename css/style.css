@@ -278,17 +278,18 @@ body {
 /* ------------------- */
 
 .memberships-section {
-  padding: 9.6rem 0;
+  padding-bottom: 9.6rem;
 }
 
 .membership {
-  width: 33.33%;
+  width: 25%;
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.5);
   border-radius: 1.6rem;
+  overflow: hidden;
 }
 
 .membership-image {
-  height: 20rem;
+  width: 100%;
   margin: 0 auto;
 }
 
