@@ -283,19 +283,47 @@ body {
 
 .membership {
   width: 25%;
-  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1);
   border-radius: 1.6rem;
   overflow: hidden;
+  transition: all 0.3s;
+}
+
+.membership:hover {
+  transform: translateY(-1.3rem);
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.2);
+}
+
+.membership-container {
+  display: flex;
+  justify-content: center;
+  gap: 3.6rem;
+}
+
+.image-text {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 2.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .membership-image {
   width: 100%;
-  margin: 0 auto;
+  filter: brightness(40%);
+  text-align: center;
+}
+
+.centered-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .membership-content {
-  padding: 4.8rem;
-  padding-top: 3.2rem;
+  padding: 3.6rem 3.6rem 1.6rem 3.6rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -304,15 +332,20 @@ body {
 
 .membership-title {
   font-size: 2.4rem;
-  font-weight: 600;
+  font-weight: 700;
   margin-bottom: 2.4rem;
+}
+
+.membership-title-amount {
+  font-size: 1.6rem;
+  font-weight: 700;
 }
 
 .membership-atributes {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .membership-atribute {
@@ -322,8 +355,70 @@ body {
   gap: 1.6rem;
 }
 
-.membership-icon {
+.membership-icon-true {
   height: 2.4rem;
   width: 2.4rem;
   color: #0f4d00;
+}
+
+.membership-icon-false {
+  height: 2.4rem;
+  width: 2.4rem;
+  color: red;
+}
+
+.btn-membership {
+  margin-top: 2.4rem;
+}
+
+/* ------------------- */
+/* Testimonials */
+/* ------------------- */
+
+.testimonials-section {
+  /* padding: 9.6rem 0; */
+}
+
+.testimonial-container {
+  display: flex;
+}
+
+.testimonials {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* gap: 4.8rem; */
+}
+
+.testimonial {
+  width: 50%;
+  padding: 2.4rem;
+}
+
+.testimonial-image {
+  width: 9.4rem;
+  border-radius: 50%;
+  margin-bottom: 1.2rem;
+}
+
+.testimonial-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin-bottom: 1.6rem;
+}
+
+.testimonial-name {
+  font-size: 1.6rem;
+}
+
+.gallery {
+  width: 50%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
 }
