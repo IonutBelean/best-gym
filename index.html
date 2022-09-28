@@ -29,26 +29,23 @@
     <main>
       <section class="hero-section">
         <div class="hero-container container">
-          <div class="hero-text-container">
-            <h1 class="main-heading">Best Gym</h1>
-            <p class="hero-description">
-              Build strength, get in shape, jump higher, run faster - whatever
-              your goals, we can help you achieve them.
-            </p>
-            <div class="buttons">
-              <a href="#" class="btn btn-main">Start building perfect body</a>
-              <a href="#" class="btn btn-secondary">Learn more &darr;</a>
-            </div>
-          </div>
-          <div class="hero-image-container">
-            <img src="./images/5.png" alt="Gym" class="hero-image" />
+          <h1 class="main-heading">Best Gym</h1>
+          <p class="hero-description">
+            Build strength, get in shape, jump higher, run faster - whatever
+            your goals, we can help you achieve them.
+          </p>
+          <div class="buttons">
+            <a href="#" class="btn btn-main">Start building perfect body</a>
+            <a href="#" class="btn btn-secondary">Learn more &darr;</a>
           </div>
         </div>
       </section>
 
       <section class="how-it-works-section">
         <div class="container">
+          <span class="subheading">About us</span>
           <h2 class="secondary-heading">Growing stronger together</h2>
+          <div class="line"></div>
         </div>
         <div class="container text-images-container">
           <div class="text-box">
@@ -73,7 +70,7 @@
         <div class="container text-images-container">
           <div class="image-box">
             <img
-              src="/images/body-fit.png"
+              src="/images/fit.png"
               alt="Personal trainers"
               class="inner-image-box"
             />
@@ -108,8 +105,9 @@
 
       <section class="facts-section">
         <div class="container">
-          <h2 class="secondary-heading">Facts</h2>
-          <p class="facts-description">Our numbers last year</p>
+          <span class="subheading">Facts</span>
+          <h2 class="secondary-heading">Our Numbers Last Year</h2>
+          <div class="line"></div>
         </div>
         <div class="container facts-container">
           <div class="facts-results">
@@ -160,7 +158,9 @@
 
       <section class="memberships-section">
         <div class="container">
-          <h2 class="secondary-heading">Memberships</h2>
+          <span class="subheading">Pricing tables</span>
+          <h2 class="secondary-heading">Membership Plans</h2>
+          <div class="line"></div>
         </div>
 
         <div class="container membership-container">
@@ -214,7 +214,7 @@
                   <span> Pool Included </span>
                 </li>
               </ul>
-              <a href="#" class="btn btn-main btn-membership">Book now</a>
+              <a href="#" class="btn-membership">Book now</a>
             </div>
           </div>
 
@@ -329,7 +329,11 @@
       </section>
 
       <section class="testimonials-section">
-        <h2 class="secondary-heading">Testimonials</h2>
+        <div class="container">
+          <span class="subheading">Our Testimonials</span>
+          <h2 class="secondary-heading">What Clients Say</h2>
+          <div class="line"></div>
+        </div>
         <div class="testimonial-container">
           <div class="testimonials">
             <figure class="testimonial">
@@ -340,7 +344,7 @@
               />
               <blockquote class="testimonial-text">
                 Best training and trainers I have ever had in my life! Super
-                friendly atmosphere.
+                friendly atmosphere. Thanks a lot!
               </blockquote>
               <p class="testimonial-name">&mdash; Melissa Schailker</p>
             </figure>
@@ -457,6 +461,51 @@
                 alt="Photo of beautifull peoples"
               />
             </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="bmi-section">
+        <div class="container">
+          <div class="bmi">
+            <div class="bmi-text-box">
+              <div class="container">
+                <span class="subheading">Advanced calculator</span>
+                <h2 class="secondary-heading">Calculate Your BMI</h2>
+                <div class="line"></div>
+              </div>
+              <form class="bmi-form" action="#">
+                <div class="height-weight-age">
+                  <label for="height">Your Height:</label>
+                  <input
+                    id="height"
+                    type="number"
+                    placeholder="Feet"
+                    required
+                  />
+
+                  <label for="weight">Your Weight:</label>
+                  <input id="weight" type="number" placeholder="Kg" required />
+
+                  <label for="age">Your Age:</label>
+                  <input id="age" type="number" placeholder="Age" required />
+                </div>
+
+                <label>Gender:</label>
+                <div class="radio">
+                  <input id="male" type="radio" name="gendre" />
+                  <label for="male">Male</label>
+                  <input id="female" type="radio" name="gendre" />
+                  <label for="female">Female</label>
+                </div>
+
+                <div>
+                  <button>Calculate now</button>
+                  <input type="text" placeholder="15.5" class="result" />
+                </div>
+              </form>
+            </div>
+            <div class="bmi-image-box" role="img" aria-label="Man in gym"></div>
           </div>
         </div>
       </section>
