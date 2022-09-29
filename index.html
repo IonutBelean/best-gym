@@ -15,14 +15,19 @@
   </head>
   <body>
     <header class="header">
-      <img src="/images/logo3.png" alt="Best Gym logo" class="logo" />
+      <a href="#" class="logo-container">
+        <img src="/images/logo3.png" alt="Best Gym logo" class="logo" />
+        <span class="logo-span best">Best</span>
+        <span class="logo-span gym">Gym</span>
+      </a>
       <nav class="nav-bar">
         <ul class="nav-list">
-          <li><a class="nav-bar-link" href="#">Section 1</a></li>
-          <li><a class="nav-bar-link" href="#">Section 2</a></li>
-          <li><a class="nav-bar-link" href="#">Section 3</a></li>
-          <li><a class="nav-bar-link" href="#">Section 4</a></li>
-          <li><a class="nav-bar-link" href="#">Section 5</a></li>
+          <li><a class="nav-bar-link" href="#">Home</a></li>
+          <li><a class="nav-bar-link" href="#">Pages</a></li>
+          <li><a class="nav-bar-link" href="#">Schedule</a></li>
+          <li><a class="nav-bar-link" href="#">Gallery</a></li>
+          <li><a class="nav-bar-link" href="#">News</a></li>
+          <li><a class="nav-bar-link" href="#">Contacts</a></li>
         </ul>
       </nav>
     </header>
@@ -152,6 +157,58 @@
               <p class="facts-description-number">642</p>
               <p class="facts-description-text">Club equipments</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="offerts offerts-grid">
+        <div class="offerts-image">
+          <img src="/images/gallery-12.jpg" />
+        </div>
+        <div class="offerts-text-box">
+          <div class="container">
+            <span class="subheading">Offerts</span>
+            <h2 class="secondary-heading">All Our Offerts</h2>
+            <div class="line"></div>
+          </div>
+          <div class="offerts-text">
+            <ul class="offerts-atributes">
+              <li class="offerts-atribute">
+                <ion-icon name="body-outline" class="offerts-icon"></ion-icon>
+                <div>
+                  <span class="offers-title"> Weight Loss Program </span>
+                  <p>
+                    Get personalized weight loss plan to start losing weight
+                    now.
+                  </p>
+                </div>
+              </li>
+
+              <li class="offerts-atribute">
+                <ion-icon
+                  name="barbell-outline"
+                  class="offerts-icon"
+                ></ion-icon>
+                <div>
+                  <span class="offers-title"> Body Building Programs </span>
+                  <p>
+                    High-intensity workout program that will help transform your
+                    body and mind in just 60 minutes a day.
+                  </p>
+                </div>
+              </li>
+
+              <li class="offerts-atribute">
+                <ion-icon name="medal-outline" class="offerts-icon"></ion-icon>
+                <div>
+                  <span class="offers-title"> Different Special Classes </span>
+                  <p>
+                    Yoga, Pilates, Circuit Training, HIIT, Water Aerobics,
+                    Cycling, Bootcamp, Zumba, Kickboxing.
+                  </p>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -510,7 +567,97 @@
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid-heading">
+          <a href="#" class="logo-container">
+            <img src="/images/logo3.png" alt="Best Gym logo" class="logo" />
+            <span class="logo-span best">Best</span>
+            <span class="logo-span gym">Gym</span>
+          </a>
+          <p class="footer-heading">Quick Contacts</p>
+          <p class="footer-heading">Popular Tags</p>
+        </div>
+        <div class="footer-grid">
+          <div class="logo-column">
+            <p class="logo-column-text">
+              If you wanna learn more about Best Gym follow us on social media.
+            </p>
+
+            <p class="social-links">
+              <a href="#"
+                ><ion-icon name="logo-facebook" class="social-icons"></ion-icon
+              ></a>
+              <a href="#"
+                ><ion-icon name="logo-instagram" class="social-icons"></ion-icon
+              ></a>
+              <a href="#"
+                ><ion-icon name="logo-youtube" class="social-icons"></ion-icon
+              ></a>
+              <a href="#"
+                ><ion-icon name="logo-twitter" class="social-icons"></ion-icon
+              ></a>
+              <a href="#"
+                ><ion-icon name="logo-google" class="social-icons"></ion-icon
+              ></a>
+            </p>
+          </div>
+
+          <div class="adress">
+            <ul class="address-atributes">
+              <li class="address-atribute">
+                <ion-icon
+                  name="location-outline"
+                  class="address-icon"
+                ></ion-icon
+                ><span> 8208 HOOPER AVE, LOS ANGELES, CA 90001-3345, USA </span>
+              </li>
+
+              <li class="address-atribute">
+                <ion-icon
+                  name="mail-open-outline"
+                  class="address-icon"
+                ></ion-icon>
+                <span>
+                  <a href="mailto:best_gym@example.com">
+                    best_gym@example.com
+                  </a>
+                </span>
+              </li>
+
+              <li class="address-atribute">
+                <ion-icon name="call-outline" class="address-icon"></ion-icon>
+                <span>
+                  <a href="tel:+ 8 (800) 123 4567">
+                    + 8 (800) 123 4567 (administrator)
+                  </a>
+                </span>
+              </li>
+
+              <li class="address-atribute">
+                <ion-icon name="globe-outline" class="address-icon"></ion-icon>
+                <span> www.bestgym.com </span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="popular">
+            <p class="popular-tags-links">
+              <a href="#">Workout</a>
+              <a href="#">Crossfit</a>
+              <a href="#">Schedule</a>
+              <a href="#">Trainers</a>
+              <a href="#">Boxing</a>
+              <a href="#">Facilities</a>
+              <a href="#">Nutrition</a>
+              <a href="#">Gym</a>
+              <a href="#">Plans</a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">&copy; Copyright 2022 All Rights Reserved</div>
+    </footer>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
