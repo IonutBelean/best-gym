@@ -6,6 +6,7 @@
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
@@ -14,6 +15,7 @@ body {
   font-family: "Roboto", sans-serif;
   line-height: 1;
   font-weight: 400;
+  overflow-x: hidden;
 }
 
 /* ------------------- */
@@ -65,11 +67,30 @@ body {
   margin: 4.8rem auto 0 auto;
 }
 
+.btn-mobile-nav {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+
+  display: none;
+}
+
+.icon-mobile-nav {
+  height: 4.8rem;
+  width: 4.8rem;
+  color: #e07400;
+}
+
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
 /* ------------------- */
 /* HEADER */
 /* ------------------- */
 
 .header {
+  position: relative;
   z-index: 10;
   position: fixed;
   width: 100%;
@@ -136,6 +157,7 @@ body {
     url(/images/wall.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -150,16 +172,18 @@ body {
 }
 
 .hero-description {
+  line-height: 3.6rem;
+  text-align: center;
   color: #c4c7bd;
   font-size: 2.4rem;
   margin-bottom: 2.4rem;
 }
 
-.buttons {
+/* .buttons {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-}
+} */
 
 .btn:link,
 .btn:visited {
@@ -273,7 +297,8 @@ body {
   text-align: center;
 }
 .facts-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 1.6rem;
 }
 
@@ -283,7 +308,7 @@ body {
   gap: 1.6rem;
   border: 5px solid transparent;
   border-radius: 2rem;
-  width: 25%;
+  /* width: 25%; */
   padding: 1.6rem;
 }
 
@@ -328,23 +353,32 @@ body {
   grid-template-columns: 1fr 1fr;
 }
 
+.offerts-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .offerts-image img {
-  height: 100%;
   width: 100%;
 }
 
 .offerts-atributes {
   display: flex;
   flex-direction: column;
-  padding: 0 9.8rem;
-  /* justify-content: center; */
-  /* align-items: center; */
+  padding: 0 2.4rem 2.4rem 9.8rem;
   gap: 4.8rem;
 }
 
+.offerts-text-box {
+  padding: 2.4px;
+}
+
 .offerts-atribute {
-  display: grid;
-  grid-template-columns: 1fr 9fr;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 3.2rem;
 }
 
 .offerts-atribute span {
@@ -353,7 +387,6 @@ body {
 }
 
 .offerts-atribute p {
-  margin-top: 1.6rem;
   color: #c4c7bd;
   font-size: 1.2rem;
   line-height: 2.4rem;
@@ -362,7 +395,6 @@ body {
 .offerts-icon {
   color: #e07400;
   font-size: 3.6rem;
-  /* margin-right: 1.2rem; */
 }
 
 /* ------------------- */
@@ -370,7 +402,7 @@ body {
 /* ------------------- */
 
 .memberships-section {
-  padding-bottom: 9.6rem;
+  padding-bottom: 6.4rem;
   background-color: #28282a;
 }
 
@@ -690,6 +722,7 @@ form button:hover {
   color: #ffffff;
   font-size: 1.8rem;
   font-weight: 500;
+  margin-bottom: 3.2rem;
 }
 
 .footer-grid {
@@ -697,6 +730,11 @@ form button:hover {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 4.8rem;
+}
+
+.logo-container-footer {
+  margin-bottom: 2.4rem;
+  margin-top: -2rem;
 }
 
 .logo-column-text {

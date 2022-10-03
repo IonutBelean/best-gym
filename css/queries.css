@@ -1,0 +1,219 @@
+/* ------------------- */
+/* Bellow 1344px */
+/* ------------------- */
+
+@media (max-width: 84em) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .offerts-image {
+    padding-left: 4.8rem;
+  }
+}
+
+/* ------------------- */
+/* Bellow 1200px */
+/* ------------------- */
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .secondary-heading {
+    font-size: 3.2rem;
+  }
+
+  .tertiary-heading {
+    font-size: 2.4rem;
+  }
+
+  .btn-membership:link,
+  .btn-membership:visited {
+    padding: 1.2rem 4.4rem;
+  }
+
+  .testimonials {
+    padding: 9.6rem 3.2rem;
+  }
+
+  .membership-content {
+    padding: 2.4rem 1.6rem 1.6rem 2.6rem;
+  }
+}
+
+/* ------------------- */
+/* Bellow 944px */
+/* ------------------- */
+
+@media (max-width: 59em) {
+  html {
+    font-size: 50%;
+  }
+
+  .hero-description {
+    padding: 0 3.2rem;
+  }
+
+  .memberships-section {
+    padding-bottom: 3.2rem;
+  }
+
+  .membership-content {
+    padding: 2.2rem 1.2rem 1.2rem 2.2rem;
+  }
+
+  .membership {
+    width: 30%;
+  }
+
+  .testimonial-container {
+    grid-template-columns: 1fr;
+  }
+
+  .facts-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .facts-icon {
+    width: 70%;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .offerts-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .offerts-image {
+    padding: 0;
+  }
+  .offerts-image img {
+    max-height: 30rem;
+    width: auto;
+  }
+
+  .offerts-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 4.8rem;
+  }
+
+  .offerts-atributes {
+    gap: 1.2rem;
+    padding: 2.4rem 2.4rem;
+    width: 60%;
+  }
+  .offerts-icon {
+    color: #e07400;
+    font-size: 3.6rem;
+    font-size: 4.8rem;
+  }
+
+  .membership-container {
+    flex-wrap: wrap;
+  }
+
+  .bmi {
+    grid-template-columns: 3fr 2fr;
+  }
+  .testimonials {
+    padding: 4.8rem 3.2rem;
+  }
+  .footer {
+    padding: 0;
+  }
+
+  .footer-grid-heading,
+  .footer-grid {
+    gap: 1.2rem;
+  }
+
+  /* Mobile Navigation */
+  .btn-mobile-nav {
+    display: block;
+  }
+  .header {
+    justify-content: space-between;
+  }
+
+  .nav-bar {
+    background-color: hsla(0, 0%, 0%, 0.9);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50vh;
+    transform: translateX(100%);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in;
+
+    opacity: 0;
+
+    pointer-events: none;
+
+    visibility: hidden;
+  }
+
+  .nav-open .nav-bar {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-bar-link:link,
+  .nav-bar-link:visited {
+    font-size: 3.2rem;
+  }
+}
+
+/* ------------------- */
+/* Bellow 704px */
+/* ------------------- */
+
+@media (max-width: 44em) {
+  .offerts-atributes {
+    flex-direction: column;
+    width: 70%;
+    padding: 3.2rem 9.6rem;
+  }
+
+  .offerts-text {
+    padding-left: 0;
+  }
+
+  .membership {
+    width: 40%;
+  }
+
+  .footer-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+    padding-left: 9.6rem;
+  }
+}
