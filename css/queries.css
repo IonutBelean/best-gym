@@ -141,13 +141,14 @@
   }
 
   .nav-bar {
-    background-color: hsla(0, 0%, 0%, 0.9);
+    background-color: hsla(0, 0%, 0%, 0.5);
+    backdrop-filter: blur(10px);
 
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 50vh;
+    height: 70vh;
     transform: translateX(100%);
 
     display: flex;

@@ -733,8 +733,8 @@ form button:hover {
 }
 
 .logo-container-footer {
-  margin-bottom: 2.4rem;
-  margin-top: -2rem;
+  margin-bottom: 2rem;
+  margin-top: -1.6rem;
 }
 
 .logo-column-text {
@@ -802,4 +802,8 @@ form button:hover {
   background-color: #28282a;
   font-size: 1.6rem;
   padding: 2.4rem 0;
+}
+
+.year {
+  margin: 0 0.5rem;
 }

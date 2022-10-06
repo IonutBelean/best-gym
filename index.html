@@ -3,7 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="Best Gym is the best gym website in the world, you can build perfect body in our gym, come here!"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="./images/FaviconLogo.png" />
+    <link rel="apple-touch-icon" href="./images/FaviconLogo-Apple.png" />
+    <link rel="manifest" href="manifest.webmanifest" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,7 +23,7 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/queries.css" />
 
-    <title>Best Gym</title>
+    <title>Best Gym &mdash; Never Back Down</title>
   </head>
   <body>
     <header class="header">
@@ -27,11 +36,12 @@
       <nav class="nav-bar">
         <ul class="nav-list">
           <li><a class="nav-bar-link" href="#">Home</a></li>
-          <li><a class="nav-bar-link" href="#">Pages</a></li>
-          <li><a class="nav-bar-link" href="#">Schedule</a></li>
-          <li><a class="nav-bar-link" href="#">Gallery</a></li>
-          <li><a class="nav-bar-link" href="#">News</a></li>
-          <li><a class="nav-bar-link" href="#">Contacts</a></li>
+          <li><a class="nav-bar-link" href="#about">About Us</a></li>
+          <li><a class="nav-bar-link" href="#facts">Facts</a></li>
+          <li><a class="nav-bar-link" href="#offerts">Offerts</a></li>
+          <li><a class="nav-bar-link" href="#pricing">Pricing</a></li>
+          <li><a class="nav-bar-link" href="#testimonials">Testimonials</a></li>
+          <li><a class="nav-bar-link" href="#bmi">BMI </a></li>
         </ul>
       </nav>
 
@@ -49,13 +59,15 @@
             your goals, we can help you achieve them.
           </p>
           <!-- <div class="buttons"> -->
-          <a href="#" class="btn btn-main">Start building perfect body</a>
-          <a href="#" class="btn btn-secondary">Learn more &darr;</a>
+          <a href="#pricing" class="btn btn-main"
+            >Start building perfect body</a
+          >
+          <a href="#about" class="btn btn-secondary">Learn more &darr;</a>
           <!-- </div> -->
         </div>
       </section>
 
-      <section class="how-it-works-section">
+      <section class="how-it-works-section" id="about">
         <div class="container">
           <span class="subheading">About us</span>
           <h2 class="secondary-heading">Growing stronger together</h2>
@@ -117,7 +129,7 @@
         </div>
       </section>
 
-      <section class="facts-section">
+      <section class="facts-section" id="facts">
         <div class="container">
           <span class="subheading">Facts</span>
           <h2 class="secondary-heading">Our Numbers Last Year</h2>
@@ -170,9 +182,9 @@
         </div>
       </section>
 
-      <section class="offerts offerts-grid">
+      <section class="offerts offerts-grid" id="offerts">
         <div class="offerts-image">
-          <img src="/images/gymm.jpg" />
+          <img src="/images/gymm.jpg" alt="Muscle man" />
         </div>
         <div class="offerts-text-box">
           <div class="container">
@@ -222,7 +234,7 @@
         </div>
       </section>
 
-      <section class="memberships-section">
+      <section class="memberships-section" id="pricing">
         <div class="container">
           <span class="subheading">Pricing tables</span>
           <h2 class="secondary-heading">Membership Plans</h2>
@@ -280,7 +292,7 @@
                   <span> Pool Included </span>
                 </li>
               </ul>
-              <a href="#" class="btn-membership">Book now</a>
+              <a href="." class="btn-membership">Book now</a>
             </div>
           </div>
 
@@ -334,7 +346,7 @@
                   <span> Pool Included </span>
                 </li>
               </ul>
-              <a href="#" class="btn btn-main btn-membership">Book now</a>
+              <a href="." class="btn btn-main btn-membership">Book now</a>
             </div>
           </div>
 
@@ -388,13 +400,13 @@
                   <span> Pool Included </span>
                 </li>
               </ul>
-              <a href="#" class="btn btn-main btn-membership">Book now</a>
+              <a href="." class="btn btn-main btn-membership">Book now</a>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="testimonials-section">
+      <section class="testimonials-section" id="testimonials">
         <div class="container">
           <span class="subheading">Our Testimonials</span>
           <h2 class="secondary-heading">What Clients Say</h2>
@@ -430,7 +442,7 @@
 
             <figure class="testimonial">
               <img
-                src="/images/picture3.jpg"
+                src="/images/picture3.png"
                 alt="men"
                 class="testimonial-image"
               />
@@ -531,7 +543,7 @@
         </div>
       </section>
 
-      <section class="bmi-section">
+      <section class="bmi-section" id="bmi">
         <div class="container">
           <div class="bmi">
             <div class="bmi-text-box">
@@ -590,19 +602,19 @@
             </p>
 
             <p class="social-links">
-              <a href="#"
+              <a href="."
                 ><ion-icon name="logo-facebook" class="social-icons"></ion-icon
               ></a>
-              <a href="#"
+              <a href="."
                 ><ion-icon name="logo-instagram" class="social-icons"></ion-icon
               ></a>
-              <a href="#"
+              <a href="."
                 ><ion-icon name="logo-youtube" class="social-icons"></ion-icon
               ></a>
-              <a href="#"
+              <a href="."
                 ><ion-icon name="logo-twitter" class="social-icons"></ion-icon
               ></a>
-              <a href="#"
+              <a href="."
                 ><ion-icon name="logo-google" class="social-icons"></ion-icon
               ></a>
             </p>
@@ -651,20 +663,22 @@
             <p class="footer-heading">Popular Tags</p>
 
             <p class="popular-tags-links">
-              <a href="#">Workout</a>
-              <a href="#">Crossfit</a>
-              <a href="#">Schedule</a>
-              <a href="#">Trainers</a>
-              <a href="#">Boxing</a>
-              <a href="#">Facilities</a>
-              <a href="#">Nutrition</a>
-              <a href="#">Gym</a>
-              <a href="#">Plans</a>
+              <a href=".">Workout</a>
+              <a href=".">Crossfit</a>
+              <a href=".">Schedule</a>
+              <a href=".">Trainers</a>
+              <a href=".">Boxing</a>
+              <a href=".">Facilities</a>
+              <a href=".">Nutrition</a>
+              <a href=".">Gym</a>
+              <a href=".">Plans</a>
             </p>
           </div>
         </div>
       </div>
-      <div class="copyright">&copy; Copyright 2022 All Rights Reserved</div>
+      <div class="copyright">
+        &copy; Copyright <span class="year"></span> All Rights Reserved
+      </div>
     </footer>
     <script
       type="module"
@@ -674,5 +688,6 @@
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
+    <script src="./script/script.js"></script>
   </body>
 </html>
