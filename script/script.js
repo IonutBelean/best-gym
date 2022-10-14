@@ -3,6 +3,14 @@ const btnNav = document.querySelector(".btn-mobile-nav");
 const header = document.querySelector(".header");
 const allLinks = document.querySelectorAll("a:link");
 
+const height = document.querySelector("#height");
+const weight = document.querySelector("#weight");
+const age = document.querySelector("#age");
+const male = document.querySelector("#male");
+const female = document.querySelector("#female");
+const calculateBtn = document.querySelector(".calculate-btn");
+const result = document.querySelector(".result");
+
 const currentYear = new Date().getFullYear();
 year.textContent = currentYear;
 
@@ -27,4 +35,33 @@ allLinks.forEach((link) => {
       header.classList.remove("nav-open");
     }
   });
+});
+
+const addValidationNumberInput = (inputElement, inputLabel) => {
+  inputElement.addEventListener("input", (event) => {
+    let value = event.target.value;
+
+    if (isNaN(value)) {
+      result.innerHTML = `${inputLabel} is not a number`;
+    }
+  });
+};
+
+addValidationNumberInput(height, "Height");
+addValidationNumberInput(weight, "Weight");
+addValidationNumberInput(age, "Age");
+
+calculateBtn.addEventListener("click", (event) => {
+  event.preventDefault();
+
+  const fistResult = Number(weight.value) / Number(height.value) ** 2;
+  const secondResult = fistResult.toFixed(2);
+
+  if (secondResult < 18.6) {
+    result.innerHTML = `Under weight: ${secondResult}`;
+  } else if (secondResult >= 18.6 && secondResult < 24.9) {
+    result.innerHTML = `Normal weight: ${secondResult}`;
+  } else {
+    result.innerHTML = `Over weight: ${secondResult}`;
+  }
 });

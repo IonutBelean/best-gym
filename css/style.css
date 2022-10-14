@@ -685,12 +685,19 @@ form button:hover {
 }
 
 .result {
-  width: 6.4rem;
+  height: 3.6rem;
+  width: auto;
   color: #e07400;
-  text-align: center;
+  background-color: #ffffff;
   font-weight: 600;
-  margin-left: 2.4rem;
-  padding: 1.2rem;
+  font-size: 1.6rem;
+
+  margin-top: 2.4rem;
+  border-radius: 10px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .result::placeholder {

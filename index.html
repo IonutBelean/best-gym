@@ -552,21 +552,17 @@
                 <h2 class="secondary-heading">Calculate Your BMI</h2>
                 <div class="line"></div>
               </div>
-              <form class="bmi-form" action="#">
+              <form class="bmi-form">
                 <div class="height-weight-age">
                   <label for="height">Your Height:</label>
-                  <input
-                    id="height"
-                    type="number"
-                    placeholder="Feet"
-                    required
-                  />
+                  <input id="height" type="text" placeholder="M" required />
+                  <div class="height-error"></div>
 
                   <label for="weight">Your Weight:</label>
-                  <input id="weight" type="number" placeholder="Kg" required />
+                  <input id="weight" type="text" placeholder="Kg" required />
 
                   <label for="age">Your Age:</label>
-                  <input id="age" type="number" placeholder="Age" required />
+                  <input id="age" type="text" placeholder="Age" required />
                 </div>
 
                 <label>Gender:</label>
@@ -578,8 +574,9 @@
                 </div>
 
                 <div>
-                  <button>Calculate now</button>
-                  <input type="text" placeholder="15.5" class="result" />
+                  <button class="calculate-btn">Calculate now</button>
+                  <!-- <input type="text" placeholder="15.5" class="result" /> -->
+                  <div class="result"></div>
                 </div>
               </form>
             </div>
