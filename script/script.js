@@ -43,13 +43,15 @@ const addValidationNumberInput = (inputElement, inputLabel) => {
 
     if (isNaN(value)) {
       result.innerHTML = `${inputLabel} is not a number`;
+    } else {
+      result.innerHTML = "";
     }
   });
 };
 
 addValidationNumberInput(height, "Height");
 addValidationNumberInput(weight, "Weight");
-addValidationNumberInput(age, "Age");
+// addValidationNumberInput(age, "Age");
 
 calculateBtn.addEventListener("click", (event) => {
   event.preventDefault();
@@ -57,11 +59,19 @@ calculateBtn.addEventListener("click", (event) => {
   const fistResult = Number(weight.value) / Number(height.value) ** 2;
   const secondResult = fistResult.toFixed(2);
 
+  if (height.value === "" || height.value == null) {
+    alert("Please fill Height field");
+    result.innerHTML = "";
+  } else if (weight.value === "" || weight.value == null) {
+    alert("Please fill Weight field");
+    result.innerHTML = "";
+  }
+
   if (secondResult < 18.6) {
     result.innerHTML = `Under weight: ${secondResult}`;
   } else if (secondResult >= 18.6 && secondResult < 24.9) {
     result.innerHTML = `Normal weight: ${secondResult}`;
-  } else {
+  } else if (secondResult >= 24.9) {
     result.innerHTML = `Over weight: ${secondResult}`;
   }
 });

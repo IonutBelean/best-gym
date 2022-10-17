@@ -120,6 +120,16 @@
   .bmi {
     grid-template-columns: 3fr 2fr;
   }
+
+  form button {
+    width: 100%;
+    padding: 1.2rem 3.6rem;
+  }
+
+  .result {
+    width: 100%;
+  }
+
   .testimonials {
     padding: 4.8rem 3.2rem;
   }
@@ -228,6 +238,14 @@
   }
   .gallery {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  form button {
+    padding: 1.2rem 1.6rem;
+  }
+
+  .result {
+    width: 100%;
   }
 }
 
