@@ -51,7 +51,6 @@ const addValidationNumberInput = (inputElement, inputLabel) => {
 
 addValidationNumberInput(height, "Height");
 addValidationNumberInput(weight, "Weight");
-// addValidationNumberInput(age, "Age");
 
 calculateBtn.addEventListener("click", (event) => {
   event.preventDefault();

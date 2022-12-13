@@ -10,8 +10,6 @@ html {
 }
 
 body {
-  /* background-color: #000000; */
-
   font-family: "Roboto", sans-serif;
   line-height: 1;
   font-weight: 400;
@@ -179,12 +177,6 @@ body {
   margin-bottom: 2.4rem;
 }
 
-/* .buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-} */
-
 .btn:link,
 .btn:visited {
   font-size: 2rem;
@@ -308,7 +300,6 @@ body {
   gap: 1.6rem;
   border: 5px solid transparent;
   border-radius: 2rem;
-  /* width: 25%; */
   padding: 1.6rem;
 }
 
@@ -376,7 +367,6 @@ body {
 
 .offerts-atribute {
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   gap: 3.2rem;
 }
@@ -601,7 +591,6 @@ body {
   display: grid;
   grid-template-columns: 2fr 1fr;
   border-radius: 10px;
-  /* height: 50rem; */
   overflow: hidden;
   border: 1px solid #e07400;
 }
@@ -614,12 +603,7 @@ body {
 }
 
 .bmi-image-box {
-  background-image: 
-  /* linear-gradient(
-    to right,
-    hsla(240, 2%, 16%, 0.3),
-    hsla(0, 0%, 0%, 0.3)
-    ), */ url(../images/3.jpg);
+  background-image: url(../images/3.jpg);
   background-size: cover;
   background-position: center;
 }
