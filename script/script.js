@@ -5,9 +5,6 @@ const allLinks = document.querySelectorAll("a:link");
 
 const height = document.querySelector("#height");
 const weight = document.querySelector("#weight");
-const age = document.querySelector("#age");
-const male = document.querySelector("#male");
-const female = document.querySelector("#female");
 const calculateBtn = document.querySelector(".calculate-btn");
 const result = document.querySelector(".result");
 
@@ -55,16 +52,18 @@ addValidationNumberInput(weight, "Weight");
 calculateBtn.addEventListener("click", (event) => {
   event.preventDefault();
 
-  const fistResult = Number(weight.value) / Number(height.value) ** 2;
-  const secondResult = fistResult.toFixed(2);
-
   if (height.value === "" || height.value == null) {
     alert("Please fill Height field");
     result.innerHTML = "";
+    return;
   } else if (weight.value === "" || weight.value == null) {
     alert("Please fill Weight field");
     result.innerHTML = "";
+    return;
   }
+
+  const fistResult = Number(weight.value) / Number(height.value) ** 2;
+  const secondResult = fistResult.toFixed(2);
 
   if (secondResult < 18.6) {
     result.innerHTML = `Under weight: ${secondResult}`;
